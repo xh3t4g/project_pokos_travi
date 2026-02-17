@@ -166,9 +166,11 @@ header span {
 
 
 /* телефон */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .section_Our_services {
         flex-direction: column;
+
+        gap: 8px;
     }
 }
 
