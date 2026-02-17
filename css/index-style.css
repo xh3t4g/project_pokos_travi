@@ -22,27 +22,93 @@ header * {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.m_6DSPBHhBjG_G2BolNaLAHaCO%3Fpid%3DApi&f=1&ipt=efd364ba7d6739f59ca9266daaf32d9fa5325d1738b8799706754c8d826bb456&ipo=images');
+    background-repeat: repeat;
+    background-size: 1200px 500px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-    height: 50px;
+    height: 200px;
     border-radius: 0 0 10px 10px;
     
 }
 
 header h3 {
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+
+
+}
+
+.header_text_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+header span {
+    color: aliceblue;
     font-size: 24px;
-    font-family: monospace;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.header_content_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.Telegram {
+    color: snow;
+    text-decoration: none;
+    background: linear-gradient(
+        135deg,
+        #649df9,
+        #446be9
+    );
+    border-radius: 7px;
+    padding: 4px;
+}
+
+.WhatsApp {
+    color: snow;
+    text-decoration: none;
+    background: linear-gradient(
+        135deg,
+        #25D366,
+        #128C7E
+    );
+    border-radius: 7px;
+    padding: 4px;
 
 }
 
-header a {
-    position: relative;
-    bottom: -10px;
+.header_link_gallery {
+    margin-left: auto;
+    display: flex;
+    margin-top: 20px;
 }
+
+.header_link_gallery a{
+    width: 100px;
+    color: snow;
+    text-decoration: none;
+    background-color: green;
+    padding: 0 10px;
+    clip-path: polygon(
+        0% 100%,   /* нижний левый угол */
+        5% 0%,     /* верхний левый угол */
+        100% 0%,   /* верхний правый угол */
+        100% 100%  /* нижний правый угол */
+    );
+
+}
+
+
 
 /* ШАПКА ⤴ */
 
