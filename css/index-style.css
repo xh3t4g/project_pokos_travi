@@ -165,8 +165,12 @@ header span {
 
 
 
-
-
+/* телефон */
+@media (max-width: 400px) {
+    .section_Our_services {
+        flex-direction: column;
+    }
+}
 
 /* ОСНОВНАЯ ЧАСТЬ САЙТА ⤴ */
 
