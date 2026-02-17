@@ -111,65 +111,62 @@ header span {
 
 
 /* ШАПКА ⤴ */
-
-.mian_section {
-    display: flex;
-    flex-direction: column;
-
-    height: 70vh;
-    gap: 10px;
-    padding: 10px;
-}
-
-.pokos_travi, .build_work {
-    flex: 1;
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.pokos_travi {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(173, 174, 173);
-}
-
-.pokos_travi .h3 {
+.Our_services_title {
     text-align: center;
-    font-family: monospace;
-    font-weight: 600;
-    font-size: 20px;
 }
 
-.pokos_travi_content {
+.section_Our_services {
     display: flex;
     flex-direction: row;
-}
-
-.text_pokos_travi_content {
-    flex: 1;
-    display: flex;
+    gap: 24px;
     justify-content: center;
+    padding: 10px;
 }
 
-.pokos_travi_btns {
+.trova, .bild {
+    background-color: grey;
+    width: 340px;
+    height: 70px;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
-    flex-shrink: 0;
-    margin: 10px;
 }
 
-.pokos_travi img {
-    width: 40%;
-    aspect-ratio: 4/3;
+.trova-img, .bild-img {
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.trova img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.155);
 }
 
-.build_work {
-    background-color: rgb(173, 174, 173);
+.trova_text, .bild-text {
+    flex: 1;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+
+.trova_text_h3, .bild-text-h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.trova_text_p, .bild-text-p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+
+
+
+
 
 /* ОСНОВНАЯ ЧАСТЬ САЙТА ⤴ */
 
