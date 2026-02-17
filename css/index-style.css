@@ -1,0 +1,120 @@
+
+body {
+
+    margin:0 auto;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+
+}
+
+main {
+    flex: 1;
+}
+
+/* ОСНОВНЫЕ НАСТРОЙКИ ⤴ */
+
+header * {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+header h3 {
+    font-size: 24px;
+    font-family: monospace;
+
+}
+
+header a {
+    position: relative;
+    bottom: -10px;
+}
+
+/* ШАПКА ⤴ */
+
+.mian_section {
+    display: flex;
+    flex-direction: column;
+
+    height: 70vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+.pokos_travi, .build_work {
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.pokos_travi {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(173, 174, 173);
+}
+
+.pokos_travi .h3 {
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pokos_travi_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_pokos_travi_content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pokos_travi_btns {
+    display: flex;
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.pokos_travi img {
+    width: 40%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.155);
+}
+
+.build_work {
+    background-color: rgb(173, 174, 173);
+}
+
+/* ОСНОВНАЯ ЧАСТЬ САЙТА ⤴ */
+
+
+.footer_contetnt{
+    background-color: grey;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
