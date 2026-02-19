@@ -98,13 +98,14 @@ header span {
     color: snow;
     text-decoration: none;
     background-color: green;
-    padding: 0 10px;
+    padding: 0 20px;
     clip-path: polygon(
         0% 100%,   /* нижний левый угол */
         5% 0%,     /* верхний левый угол */
         100% 0%,   /* верхний правый угол */
         100% 100%  /* нижний правый угол */
     );
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -124,27 +125,16 @@ header span {
 }
 
 .trova, .bild {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     width: 90%;
-    max-width: 340px;
-    height: 70px;
+    max-width: 500px;
     margin: 0 auto;
-    border-radius: 12px;
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.386);
 }
 
-.trova-img, .bild-img {
-    width: 30%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.trova img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .trova_text, .bild-text {
     flex: 1;
@@ -152,17 +142,20 @@ header span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 
 }
 
 .trova_text_h3, .bild-text-h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 .trova_text_p, .bild-text-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 13px;
+    text-align: center;
 }
 
 
