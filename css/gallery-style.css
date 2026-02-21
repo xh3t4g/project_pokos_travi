@@ -2,7 +2,7 @@
 
 body {
     min-height: 100vh;
-    background: url("/assets/img/pokos_travi_phon.jpg");
+    background: url("../assets/img/pokos_travi_phon.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
