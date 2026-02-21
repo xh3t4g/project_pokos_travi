@@ -1,15 +1,38 @@
 
+
 body {
+    min-height: 100vh;
+    background: url('/assets/img/покос\ травы\ фон.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 
     margin:0 auto;
     padding: 0;
 
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    max-width: 1200px;
 
 }
+
+body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+
+      background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0) 0%,
+            rgb(0, 0, 0) 100%
+            );
+
+    z-index: -1;
+}
+
 
 main {
     flex: 1;
@@ -21,27 +44,56 @@ header * {
     margin: 0;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.35);
-
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    height: 50px;
-    border-radius: 0 0 10px 10px;
-    
+    padding: 40px 20px;
 }
 
 header h3 {
-    font-size: 24px;
-    font-family: monospace;
-
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-weight: bold;
 }
 
-header a {
-    position: relative;
-    bottom: -10px;
+.header_text_container {
+    text-align: center;
+}
+
+
+header span {
+    color: aliceblue;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.header_link_kover {
+    position: absolute;
+    right: 10px;
+    transition: all 0.3s ease;
+}
+
+.header_link_kover a {
+
+    width: 100px;
+    color: snow;
+    text-decoration: none;
+    background: linear-gradient(
+        135deg,
+        #16793a,
+        #37ae63    
+    );
+    padding: 0 20px;
+    margin: 10px;
+    border-radius: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 /* ШАПКА ⤴ */
@@ -60,7 +112,7 @@ header a {
     display: block;
     object-fit: cover;
     border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.445);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.537);
 }
 
 
@@ -78,20 +130,34 @@ header a {
         grid-template-columns: 1fr;
         gap: 8px;
     }
-}
+    .header_link_kover {
+        top: 10px;
+    }
+}   
 
 /* ОСНОВА */
 
 
 
 .footer_contetnt{
-    background-color: grey;
     height: 40px;
     border-radius: 10px 10px 0 0;
 
     display: flex;
     padding: 0 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.footer_contetnt span {
+    color: white;
+    font-family: monospace;
+
+}
+
+.footer_gradient {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to top, white, transparent);
 }
 
