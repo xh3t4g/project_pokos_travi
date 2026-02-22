@@ -15,7 +15,7 @@ body {
 
 }
 
-body::after {
+/* body::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -30,7 +30,7 @@ body::after {
             );
 
     z-index: -1;
-}
+} */
 
 
 main {
@@ -120,7 +120,7 @@ header span {
 }
 
 .trova, .bild {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffffdd;
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
@@ -128,6 +128,14 @@ header span {
     overflow: hidden;
     display: flex;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.386);
+}
+
+.trova {
+    box-shadow: inset 0 0 30px rgba(0, 128, 0, 0.264);
+}
+
+.bild {
+    box-shadow: inset 0 0 30px rgba(128, 75, 0, 0.264);
 }
 
 
@@ -145,6 +153,11 @@ header span {
     font-family: 'Fredoka', sans-serif;
     font-weight: 700;
     text-align: center;
+    color: rgb(36, 57, 40);
+}
+
+.bild-text-h3 {
+    color: rgb(82, 59, 34);
 }
 
 .trova_text_p, .bild-text-p {
@@ -153,14 +166,36 @@ header span {
     text-align: center;
 }
 
+.trova_text_card, .bild-text-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.trova_text_card_txt {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline green ;
+}
+
+.bild_text_card_txt {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline orange;
+}
+
 .news {
     position: relative;
     bottom: 0;
     left: 0;
 
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
+    padding: 10px;
 }
 
 
@@ -175,7 +210,7 @@ header span {
         #21a6de
     );
     border-radius: 7px;
-    padding: 4px;
+    padding: 10px;
 }
 
 .WhatsApp {
@@ -189,9 +224,22 @@ header span {
         #6ab634
     );
     border-radius: 7px;
-    padding: 4px;
+    padding: 10px;
 
 }
+/* планшет */
+@media (max-width: 700px) {
+    .trova_text_card_txt, .bild_text_card_txt {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 590px) {
+    .trova_text_card_txt, .bild_text_card_txt {
+        font-size: 10px;
+    }
+}
+
 
 /* телефон */
 @media (max-width: 500px) {
@@ -206,6 +254,13 @@ header span {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+    .trova_text_card_txt, .bild_text_card_txt {
+        flex-direction: column;
+        text-align: center;
+        line-height: 2;
+        font-size: 16px;
+        
     }
 }
 
@@ -232,4 +287,15 @@ header span {
     height: 1px;
     width: 100%;
     background: linear-gradient(to top, white, transparent);
+}
+
+.fog {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: -200px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7));
+    pointer-events: none;
+
+    z-index: -1;
 }
