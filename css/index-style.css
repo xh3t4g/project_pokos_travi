@@ -129,6 +129,8 @@ header span {
 }
 
 .card_trova, .card_bild{
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
     width: 420px;
     background-color: rgba(255, 255, 255, 0.551);
     backdrop-filter: blur(4px);
@@ -143,14 +145,16 @@ header span {
 }
 
 
-.card_container_title {
-    line-height: 1.2;
-}
 
 .card_container_title {
     text-align: center;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
+}
+
+.card_container_title h3 {
+    margin: 0;
+    line-height: 2;
 }
 
 
@@ -162,6 +166,7 @@ header span {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 
