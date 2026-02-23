@@ -41,9 +41,24 @@ header * {
 header h3 {
     font-size: 60px;
     font-family: 'Space Grotesk', sans-serif;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.506);
+}
+
+.Kavro_title_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+.Kavro_title_header span {
+
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .header_text_container {
@@ -101,78 +116,55 @@ header span {
     margin-top: 50px;
 }
 
-.card_section_Our_services {
+.card_container {
     display: flex;
-    gap: 24px;
-}
-
-.trova, .bild {
-    background-color: #ffffffdd;
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.386);
-}
-
-.trova {
-    box-shadow: inset 0 0 30px rgba(0, 128, 0, 0.264);
-}
-
-.bild {
-    box-shadow: inset 0 0 30px rgba(128, 75, 0, 0.264);
-}
-
-
-.trova_text, .bild-text {
-    flex: 1;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
     gap: 10px;
-
 }
 
-.trova_text_h3, .bild-text-h3 {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    color: rgb(36, 57, 40);
+.card_bild, .card_trova * {
+    margin: 0;
 }
 
-.bild-text-h3 {
-    color: rgb(82, 59, 34);
-}
+.card_trova, .card_bild{
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.551);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    padding: 20px;
 
-.trova_text_p, .bild-text-p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 13px;
-    text-align: center;
-}
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.291);
+    
 
-.trova_text_card, .bild-text-card {
     display: flex;
     flex-direction: column;
 }
 
-.trova_text_card_txt {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: underline green ;
+
+.card_container_title {
+    line-height: 1.2;
 }
 
-.bild_text_card_txt {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: underline orange;
+.card_container_title {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 22px;
 }
+
+
+.card_container_text_trova, .card_container_text_bild {
+    display: flex;
+    padding: 12px 12px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 .news {
     position: relative;
@@ -220,44 +212,36 @@ header span {
     padding: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
-
-}
-/* планшет */
-@media (max-width: 700px) {
-    .trova_text_card_txt, .bild_text_card_txt {
-        font-size: 13px;
-    }
 }
 
-@media (max-width: 590px) {
-    .trova_text_card_txt, .bild_text_card_txt {
-        font-size: 10px;
-    }
-}
-
-
-/* телефон */
-@media (max-width: 500px) {
-    .card_section_Our_services {
+@media (max-width: 780px) {
+    .card_container {
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
     }
-    .header_link_gallery {
-        top: 10px;
-    }
+}
+
+@media (max-width: 500px) {
     .news {
         flex-direction: column;
         gap: 8px;
         text-align: center;
     }
-    .trova_text_card_txt, .bild_text_card_txt {
+
+    .card_container_text_trova, .card_container_text_bild {
         flex-direction: column;
         text-align: center;
         line-height: 2;
-        font-size: 16px;
-        
+    }
+    .card_trova, .card_bild {
+        width: 300px;
+    }
+    .header_link_gallery {
+        top: 15px;
     }
 }
+
+
 
 /* ОСНОВНАЯ ЧАСТЬ САЙТА ⤴ */
 
@@ -273,7 +257,7 @@ header span {
 }
 
 .footer_contetnt span {
-    color: white;
+    color: rgb(219, 219, 219);
     font-family: monospace;
 
 }
@@ -281,7 +265,7 @@ header span {
 .footer_gradient {
     height: 1px;
     width: 100%;
-    background: linear-gradient(to top, white, transparent);
+    background: linear-gradient(to top, rgb(188, 188, 188), transparent);
 }
 
 .fog {
